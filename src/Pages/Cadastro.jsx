@@ -1,19 +1,12 @@
 import Logo from "../Componente/Logo"
 import salvar from '../Img/salvar.png'
-import { useStete } from 'react'
 import { useHistory } from 'react-router-dom';
 
-const Cadastro =(state)=>{
+const Cadastro =()=>{
     
     const historico = useHistory()
 
     function addTarefa(e) {
-        // debugger
-        // const {tarefas, titulo} = state
-        // state.setTarefa({ tarefas: [ ...tarefas, {
-        //     titulo: titulo.value,
-        //     checked: false
-        // } ] })
         let caminho = 'inicial'
         historico.push(caminho)
     }

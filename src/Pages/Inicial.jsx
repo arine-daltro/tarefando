@@ -1,14 +1,9 @@
 import '../Styles/global.css'
 import Tarefas from '../Componente/Tarefas'
-import { useState } from 'react'
 
 import Button from '../Componente/Button'
 import Logo from '../Componente/Logo'
 const Inicial = props =>{
-    console.log(props)
-    // const [tarefas, setTarefas] = useState([
-    //     {id: 1, titulo: 'teste', checked:false}
-    // ])
 
     return(
 
