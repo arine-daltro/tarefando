@@ -11,24 +11,22 @@ const Inicial = props =>{
             <div className='logo-menor'>
                 <Logo/>
             </div> 
-            <div className="card-container">
-                { (()=>{
-                    if (props.tarefas.length) {
-                        return[
-                            props.tarefas.map(tarefa => 
-                                <Tarefas titulo={tarefa.titulo} id={tarefa.id} checked={tarefa.checked}/>
-                            )
-                        ]
-                    } else {
-                        return[
-                            <div className='card'>
-                                <p className='texto-inicial'>Você ainda não cadastrou tarefas.</p>
-                                <p className='texto-inicial'>Para adicionar, clique no botão <strong>"+"</strong> abaixo.</p>   
-                            </div>
-                        ]
-                    }
-                })()}
-            </div>
+            { (()=>{
+                if (props.tarefas.length) {
+                    return[
+                        props.tarefas.map(tarefa => 
+                            <Tarefas titulo={tarefa.titulo} id={tarefa.id} checked={tarefa.checked}/>
+                        )
+                    ]
+                } else {
+                    return[
+                        <div className='card'>
+                            <p className='texto-inicial'>Você ainda não cadastrou tarefas.</p>
+                            <p className='texto-inicial'>Para adicionar, clique no botão <strong>"+"</strong> abaixo.</p>   
+                        </div>
+                    ]
+                }
+            })()}
             <Button/>
         </> 
     )

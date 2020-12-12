@@ -14,7 +14,7 @@ const Cadastro =()=>{
     return(
 
         <>
-            <div className='logo-menor'>
+            <div className='logo-menor logo-menor-cadastro'>
                 <Logo/>
             </div> 
             <div className='card1'>

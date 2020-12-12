@@ -92,10 +92,9 @@
     border-radius: 8px;
     background: white;
     padding: 16px;
-    width: 75%;
+    width: 85%;
     height: auto;
     margin: 1rem  auto;
-    margin-top: -200px;
 }
 
 .card-container {
@@ -144,13 +143,24 @@
     margin: auto 1rem;
 }
 
+.logo-menor {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.logo-menor-cadastro {
+    margin-top: -310px;
+}
+
 
 .logo-menor .logo h1 {
 
     font-size: 36px;
-    position: absolute;
+    /* position: absolute; */
     top: 30px;
-    right: 100px; 
+    /* right: 100px;  */
+    
 }
 
 
@@ -159,9 +169,11 @@
     font-size: 12px;
     height: 50px;
     width: 120px;
-    position: absolute;
+    /* position: absolute; */
     top: 45px;
-    right: 60px; 
+    /* right: 60px;  */
+    display: flex;
+    justify-content: flex-end;
 }    
 
 .texto-inicial {
